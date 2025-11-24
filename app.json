@@ -3,7 +3,22 @@
     "name": "EmoGo",
     "slug": "emogo1124",
     "version": "1.0.0",
-    "scheme": "acme",
+    "platforms": ["ios", "android"],
+    "android": {
+      "package": "com.emogo.datacollection",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "versionCode": 3
+    },
+    "ios": {
+      "bundleIdentifier": "com.emogo.datacollection"
+    },
     "plugins": [
       [
         "expo-camera",
@@ -18,32 +33,11 @@
         }
       ]
     ],
-    "android": {
-      "package": "com.emogo.datacollection",
-      "permissions": [
-        "android.permission.CAMERA",
-        "android.permission.RECORD_AUDIO",
-        "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION",
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE"
-      ]
-    },
     "extra": {
-      "router": {},
       "eas": {
         "projectId": "9af6fbaa-fbbe-46fa-9f01-987d6a5a2222"
       }
     },
-    "owner": "shane365",
-    "ios": {
-      "bundleIdentifier": "com.emogo.datacollection",
-      "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false,
-        "NSCameraUsageDescription": "Allow EmoGo to access your camera to record vlogs",
-        "NSLocationWhenInUseUsageDescription": "Allow EmoGo to access your location",
-        "NSLocationAlwaysAndWhenInUseUsageDescription": "Allow EmoGo to access your location"
-      }
-    }
+    "owner": "shane365"
   }
 }
