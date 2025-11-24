@@ -5,7 +5,6 @@
     "version": "1.0.0",
     "scheme": "acme",
     "plugins": [
-      "expo-router",
       [
         "expo-camera",
         {
