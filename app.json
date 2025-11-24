@@ -17,17 +17,16 @@
       ]
     ],
     "name": "EmoGo",
-    "version": "1.0.0",
     "slug": "emogo1124",
     "android": {
       "package": "com.emogo.datacollection",
       "permissions": [
-        "CAMERA",
-        "RECORD_AUDIO",
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
       ]
     },
     "extra": {
@@ -45,7 +44,6 @@
         "NSLocationWhenInUseUsageDescription": "Allow EmoGo to access your location",
         "NSLocationAlwaysAndWhenInUseUsageDescription": "Allow EmoGo to access your location"
       }
-    },
-    "runtimeVersion": "1.0.0"
+    }
   }
 }
