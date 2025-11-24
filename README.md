@@ -5,20 +5,23 @@
 
 📱 **[Access the app on Expo](https://expo.dev/accounts/shane365/projects/emogo1124)**
 
-## 📦 Access the App
+## 📱 Access the App
 
-### Option 1: Expo Go (Recommended - Easiest)
+### ✅ Expo Go (Recommended - Easiest & Free)
 **[Open in Expo Go](https://expo.dev/accounts/shane365/projects/emogo1124)**
 
-This is the quickest way to test the app. Install Expo Go, scan the QR code, and the app launches immediately.
+This is the quickest way to test the app. Install [Expo Go](https://expo.dev/client), scan the QR code, and the app launches immediately.
 
-### Option 2: Android Preview Build (APK Installation)
-**APK Build Status**: Currently being compiled via EAS Build services. Once complete, you can download and install directly on Android devices without Expo Go.
+**Steps:**
+1. Download Expo Go from App Store or Google Play Store
+2. Visit https://expo.dev/accounts/shane365/projects/emogo1124
+3. Scan the QR code or tap "Open with Expo Go"
+4. App opens instantly with full functionality
 
-To check the build status:
-1. Visit https://expo.dev/accounts/shane365/projects/emogo1124/builds
-2. Look for the latest "preview" build
-3. Once complete, click "Install" to download the APK
+### APK Build (Android Installation)
+**Status**: Android preview APK builds require a paid EAS subscription (free tier limit reached). The app is fully functional via Expo Go, which provides the same functionality without installation.
+
+**Expo credentials**: All required permissions for camera, location, and storage are properly configured and working in the published version.
 
 
 ## Overview
