@@ -5,6 +5,12 @@
 
 📱 **[Access the app on Expo](https://expo.dev/accounts/shane365/projects/emogo1124)**
 
+## 📦 Android Preview Build (APK for Installation)
+
+**[Download Android Preview Build](https://expo.dev/accounts/shane365/projects/emogo1124/builds/4eb958aa-36b9-490f-bf4e-f2c1f09b0aa4)**
+
+This build can be shared and installed on Android devices (for TAs/reviewers).
+
 ## Overview
 
 EmoGo is a React Native mobile application built with Expo that collects three types of data three times a day:
