@@ -1,5 +1,8 @@
 {
   "expo": {
+    "name": "EmoGo",
+    "slug": "emogo1124",
+    "version": "1.0.0",
     "scheme": "acme",
     "plugins": [
       "expo-router",
@@ -16,8 +19,6 @@
         }
       ]
     ],
-    "name": "EmoGo",
-    "slug": "emogo1124",
     "android": {
       "package": "com.emogo.datacollection",
       "permissions": [
