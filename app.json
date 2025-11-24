@@ -2,25 +2,68 @@
   "expo": {
     "scheme": "acme",
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow EmoGo to access your camera to record vlogs"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow EmoGo to access your location"
+        }
+      ]
     ],
-    "name": "expo-router-mwe",
-    "slug": "expo-router-mwe",
+    "name": "EmoGo",
+    "slug": "emogo1124",
     "android": {
-      "package": "com.spiketren.exporoutermwe"
+      "package": "com.emogo.datacollection",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
     },
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "7918e76f-59e9-45c4-aae4-c99cec64cfac"
+        "projectId": "9af6fbaa-fbbe-46fa-9f01-987d6a5a2222"
       }
     },
-    "owner": "spiketren",
+    "owner": "shane365",
     "ios": {
-      "bundleIdentifier": "com.spiketren.exporoutermwe",
+      "bundleIdentifier": "com.emogo.datacollection",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "Allow EmoGo to access your camera to record vlogs",
+        "NSLocationWhenInUseUsageDescription": "Allow EmoGo to access your location",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Allow EmoGo to access your location"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/9af6fbaa-fbbe-46fa-9f01-987d6a5a2222"
     }
   }
 }
