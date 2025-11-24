@@ -5,11 +5,21 @@
 
 📱 **[Access the app on Expo](https://expo.dev/accounts/shane365/projects/emogo1124)**
 
-## 📦 Android Preview Build (APK for Installation)
+## 📦 Access the App
 
-**[Download Android Preview Build](https://expo.dev/accounts/shane365/projects/emogo1124/builds/4eb958aa-36b9-490f-bf4e-f2c1f09b0aa4)**
+### Option 1: Expo Go (Recommended - Easiest)
+**[Open in Expo Go](https://expo.dev/accounts/shane365/projects/emogo1124)**
 
-This build can be shared and installed on Android devices (for TAs/reviewers).
+This is the quickest way to test the app. Install Expo Go, scan the QR code, and the app launches immediately.
+
+### Option 2: Android Preview Build (APK Installation)
+**APK Build Status**: Currently being compiled via EAS Build services. Once complete, you can download and install directly on Android devices without Expo Go.
+
+To check the build status:
+1. Visit https://expo.dev/accounts/shane365/projects/emogo1124/builds
+2. Look for the latest "preview" build
+3. Once complete, click "Install" to download the APK
+
 
 ## Overview
 
