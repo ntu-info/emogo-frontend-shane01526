@@ -9,7 +9,11 @@
       "distribution": "internal"
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "GRADLE_BUILD_MEM": "-Xmx4096m",
+        "EXPO_BUILD_PROFILE": "preview"
+      }
     },
     "production": {
       "autoIncrement": true

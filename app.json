@@ -17,6 +17,7 @@
       ]
     ],
     "name": "EmoGo",
+    "version": "1.0.0",
     "slug": "emogo1124",
     "android": {
       "package": "com.emogo.datacollection",
@@ -45,8 +46,6 @@
         "NSLocationAlwaysAndWhenInUseUsageDescription": "Allow EmoGo to access your location"
       }
     },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    }
+    "runtimeVersion": "1.0.0"
   }
 }
