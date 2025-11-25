@@ -3,18 +3,18 @@
 
 # EmoGo - Data Collection App
 
-📱 **[Access the app on Expo](https://expo.dev/accounts/shane365/projects/emogo1124)**
+📱 **[Access the app on Expo](https://expo.dev/accounts/shane5658/projects/emogo1124)**
 
 ## 📱 Access the App
 
 ### ✅ Expo Go (Recommended - Easiest & Free)
-**[Open in Expo Go](https://expo.dev/accounts/shane365/projects/emogo1124)**
+**[Open in Expo Go](https://expo.dev/accounts/shane5658/projects/emogo1124)**
 
 This is the quickest way to test the app. Install [Expo Go](https://expo.dev/client), scan the QR code, and the app launches immediately.
 
 **Steps:**
 1. Download Expo Go from App Store or Google Play Store
-2. Visit https://expo.dev/accounts/shane365/projects/emogo1124
+2. Visit https://expo.dev/accounts/shane5658/projects/emogo1124
 3. Scan the QR code or tap "Open with Expo Go"
 4. App opens instantly with full functionality
 
@@ -247,16 +247,18 @@ Notifications trigger the app and prompt users to collect data.
 
 ## Publishing to Expo
 
-The app is now published and available on Expo!
+The app has been successfully published to Expo!
 
-### Access the App
-- **Main Link**: https://expo.dev/accounts/shane365/projects/emogo1124
-- **Dashboard**: https://expo.dev/accounts/shane365/projects/emogo1124/updates/15cdfe68-6b43-4a09-8d7a-6f3d63fd72cf
+### Current Deployment
+- **Project URL**: https://expo.dev/accounts/shane5658/projects/emogo1124
+- **Update Group ID**: a8c91484-adc1-44ad-af44-a58f714399b1
+- **Runtime Version**: 1.0.0
 
 ### Open in Expo Go
 1. Download [Expo Go](https://expo.dev/client) on your mobile device
-2. Scan the QR code in the Expo project dashboard
-3. App will open and you can start using EmoGo immediately
+2. Visit https://expo.dev/accounts/shane5658/projects/emogo1124
+3. Scan the QR code or tap "Open with Expo Go"
+4. App will open and you can start using EmoGo immediately
 
 ### Build Native Apps
 To create standalone native apps:
@@ -270,16 +272,91 @@ npx eas build --platform ios
 
 ## AI Interaction History
 
-This implementation was developed through collaborative AI-assisted coding with the following key aspects:
+This implementation was developed through collaborative AI-assisted coding. Key development stages included:
 
-1. **Architecture**: Modular structure with separate files for database, notifications, and exports
-2. **Data Storage**: SQLite for reliable local storage with three dedicated tables
-3. **UI/UX**: Bottom tab navigation with quick-access buttons from home screen
-4. **Notifications**: Scheduled system notifications at fixed times (8 AM, 1 PM, 6 PM)
-5. **CSV Export**: Automatic CSV formatting with timestamp-based filenames
-6. **Permissions**: Comprehensive permission handling for camera, location, and file access
-7. **Error Handling**: User-friendly alerts for permission denial and operation failures
-8. **Sample Data**: Multi-day test data demonstrating full collection cycle
+### 1. **Project Initialization & Setup**
+   - Set up React Native project with Expo Router for navigation
+   - Configured app.json with proper permissions (camera, location, storage)
+   - Added EAS (Expo Application Services) configuration for publishing
+   - Installed all required packages: expo-notifications, expo-sqlite, expo-camera, expo-file-system, expo-sharing, expo-location
+
+### 2. **Database Architecture (db.js)**
+   - Implemented SQLite database with three tables:
+     - `questionnaire`: sentiment, mood, energy, timestamp
+     - `location`: latitude, longitude, accuracy, timestamp
+     - `vlog`: filename, uri, duration, timestamp
+   - Created utility functions: saveQuestionnaire, saveLocation, saveVlog
+   - Added retrieval functions: getQuestionnaires, getLocations, getVlogs
+   - Implemented clearAllData for data management
+
+### 3. **Notification System (notifications.js)**
+   - Set up daily push notifications at 8:00 AM, 1:00 PM, and 6:00 PM
+   - Configured notification permissions and handlers
+   - Implemented test notification feature for development
+
+### 4. **Data Collection Screens**
+   - **Questionnaire Screen (questionnaire.js)**:
+     - 5-point sentiment scale (Very Negative to Very Positive)
+     - 6 mood options (Stressed, Anxious, Sad, Neutral, Happy, Excited)
+     - 1-10 energy level slider
+     - Real-time form validation and submission
+   
+   - **Vlog Recorder (vlog.js)**:
+     - 1-second auto-stop recording functionality
+     - Camera permission handling
+     - Automatic file naming with timestamps
+     - Visual recording indicator
+   
+   - **Location Tracker (location.js)**:
+     - High-accuracy GPS coordinate collection
+     - Reverse geocoding for address lookup
+     - Location history view with scrollable list
+     - Accuracy metrics display
+
+### 5. **CSV Export System (csvexport.js)**
+   - Multi-format CSV export (questionnaire, location, vlog)
+   - Automatic timestamp-based filename generation
+   - Integration with device sharing capabilities
+   - Real-time data summary counting
+
+### 6. **Navigation & UI (App Layout)**
+   - Root layout with automatic app initialization
+   - Bottom tab navigation (Home & Dashboard)
+   - Modal-style data collection screens
+   - Integration of MaterialCommunityIcons for visual design
+
+### 7. **Home Screen (index.js)**
+   - Data summary cards with counts
+   - Quick-action buttons for each data type
+   - Test notification button for development
+   - Usage instructions
+
+### 8. **Dashboard Screen (settings.js)**
+   - Data statistics visualization
+   - Export to CSV functionality
+   - Clear data with confirmation dialog
+   - App information section
+
+### 9. **Sample Data Creation**
+   - Generated 6+ records for each data type
+   - Spanning 36 hours (Nov 23 08:15 - Nov 24 20:15)
+   - Realistic coordinates (Taipei area)
+   - Varied sentiments and mood selections
+   - Stored in `/data` folder as CSV files
+
+### 10. **Publishing & Deployment**
+   - Configured EAS Update for Expo publishing
+   - Deployed to Expo server (November 25, 2025)
+   - Published update group ID: a8c91484-adc1-44ad-af44-a58f714399b1
+   - App runtime version: 1.0.0
+
+### Key Design Decisions
+1. **Modular Code Structure**: Separated concerns (db, notifications, export) for maintainability
+2. **Local-First Data Storage**: SQLite ensures user privacy and offline functionality
+3. **Push Notifications**: Scheduled reminders improve user compliance
+4. **CSV Export Format**: Standard format for data analysis and backup
+5. **Permission Handling**: Graceful degradation if permissions not granted
+6. **User Feedback**: Alerts and visual indicators for all operations
 
 All screens include proper error handling and user feedback through alerts and visual indicators.
 
@@ -287,7 +364,12 @@ All screens include proper error handling and user feedback through alerts and v
 
 The app uses Expo SQLite for local data storage. The database (`emogo.db`) is created automatically on first run and persists across app sessions.
 
-## How to run
+## How to Use
+
+### Option 1: Use the Published App (Recommended)
+The app is already published on Expo! Follow the instructions in the "Access the App" section above to use it immediately without any setup.
+
+### Option 2: Run Locally for Development
 
 1. Install dependencies:
    ```bash
