@@ -32,12 +32,6 @@
           "locationAlwaysAndWhenInUsePermission": "Allow EmoGo to access your location"
         }
       ]
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "9af6fbaa-fbbe-46fa-9f01-987d6a5a2222"
-      }
-    },
-    "owner": "shane365"
+    }
   }
 }
