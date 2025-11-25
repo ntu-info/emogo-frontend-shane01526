@@ -3,7 +3,10 @@
     "name": "EmoGo",
     "slug": "emogo1124",
     "version": "1.0.0",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "android": {
       "package": "com.emogo.datacollection",
       "permissions": [
@@ -32,6 +35,12 @@
           "locationAlwaysAndWhenInUsePermission": "Allow EmoGo to access your location"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "25b852df-2c45-49cf-83ea-821146b062e5"
+      }
+    },
+    "owner": "shane5658"
   }
 }
